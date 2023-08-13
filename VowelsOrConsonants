@@ -1,0 +1,18 @@
+package org.app;
+
+//WRITE A PROG THAT TAKES A XTER INPUT FROM THE USER AND PRINTS WHETHER ITS A VOWEL OR CONSONANT
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("PLEASE ENTER A CHARACTER: ");
+        //NOTE THE USE OF next().charAt(0) when taking xter inputs from the user
+        Character input = scan.next().charAt(0);
+        if(input == 'A' || input == 'E'|| input == 'I' || input == 'O' || input == 'U'
+                || input == 'a' ||input == 'e' ||input == 'i' || input == 'o' || input == 'u'){
+            System.out.println(input + " is a vowel");
+        }else{
+            System.out.println(input + " is a consonant");
+        }
+    }
+}
